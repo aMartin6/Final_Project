@@ -8,7 +8,7 @@
 
 * Science is all about making models and using them to predict events in real life.
 * A **model** is anything that is used to represent real life. It can be many things, often mathematical.
-* Making a model is theortical physics, and comparing a model to real life is experimental physics. 
+* Making a model is theoretical physics and comparing a model to real life is experimental physics. 
 
 #### The Computational Physicist
 
@@ -16,27 +16,27 @@
 
 #### A Computer Program is a Model
 
-* Running a compuater program is different from conducting a real experiment, because the process is entirely man made, even though we don't always know what the results are going to be. 
+* Running a computer program is different from conducting a real experiment, because the process is entirely man made, even though we don't always know what the results are going to be. 
 * The data given by a numerical model generally fits the expected analytical model.
 
 #### Where Do We Put Computational Physics?
 
 * Creating a computer program falls under the "build a model" category of physics. We have not tested it unless we compare it to real life. 
-* Computer programs are now a very important part of every science feild. 
+* Computer programs are now a very important part of every science field. 
 
 ### 12 Steps Toward Rock-Solid Scientific Python Code
 
 1. Use version control
     * This is useful because it allows you to save multiple versions of a code and easily switch between them or merge contributions.
 2. Put your code in the cloud in the open
-    * This allows you to share code and keep back up copies of your work.
-3. Add a README and a liscence
-    * It is important to have a README file with all the basic information needed to understand and use your code. A liscence allows other to use, redistribute, and modify your code. 
+    * This allows you to share code and keep backup copies of your work.
+3. Add a README and a license
+    * It is important to have a README file with all the basic information needed to understand and use your code. A license allows other to use, redistribute, and modify your code. 
 4. Write docstrings
 5. Write tests
-    * a doctest is a python module that takes all the examples in your docstrings, runs them, and checks whether the output in the docstring matches the actual output. These are useful for testing indvidual functions out on various cases. 
+    * a doctest is a python module that takes all the examples in your docstrings, runs them, and checks whether the output in the docstring matches the actual output. These are useful for testing individual functions out on various cases. 
 6. Keep track of issues
-    * Raise an issue on GitHub to remind yourself and other people that theres something wrong with your code, and have public discussions about it. 
+    * Raise an issue on GitHub to remind yourself and other people that there’s something wrong with your code, and have public discussions about it. 
 7. Automate the tests
     * Nose is a test automation tool that automatically finds and runs all the tests in your code. 
 8. Automate the build
@@ -47,3 +47,8 @@
 
 * These steps can be done quickly and usually save you time and make your work more credible. 
 
+## Project Ideas
+
+One topic from the Giordano text that I am interested in is Earthquakes and Self-Organized Criticality. If I were to do this, I would probably follow the method that the article suggests and use the Euler or Runge-Kutta method to calculate the force at different positions, or blocks, at a certain time step.   
+  
+Another idea is to model the waves on a string of a musical instrument, and consider the frequency spectrum. For this project I might to a Fourier transform of the string vibration at various lengths.
