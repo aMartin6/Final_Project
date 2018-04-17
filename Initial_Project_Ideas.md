@@ -59,18 +59,18 @@ Another idea is to model the waves on a string of a musical instrument, and cons
 
 2. Controlling equations:
 * Force equations:
-    * Force on block from neighboring blocks: $F_b = -k_c(x_i - x_{i+1}) - k_c(x_i - x_{i-1})$
-    * Force of a leaf spring on block: $F_l = -k_p(x_i - v_0 t)$
-    * Friction force due to bottom plate: $F_f = -\frac{F_0 sin(v_i)}{1 + |v_i / v_f|}$
-* Overall equation of motion: $m_i \frac{d^2 x_i}{dt^2} = k_c(x_{i+1} + x_{i-1} - 2X_i) + k_p(v_0 t - x_i) + F_f$
-    * If we break this up, we have: $\frac{dx_i}{dt} = v_i$ and $m_i \frac{d^2 v_i}{dt^2} = k_c(x_{i+1} + x_{i-1} - 2X_i) + k_p(v_0 t - x_i) + F_f$
+    * Force on block from neighboring blocks: Fb = -kc(xi - x(i+1)) - kc(xi - x(i-1))
+    * Force of a leaf spring on block: Fl = -kp(xi - v0 t)
+    * Friction force due to bottom plate: Ff = -(F0 * sin(v_i))/(1 + |vi / vf|)
+* Overall equation of motion: mi * d^2xi/dt^2 = kc(x(i+1) + x(i-1) - 2Xi) + kp(v0 * t - xi) + Ff
+    * If we break this up, we have: dxi/dt = vi and mi * d^2xi/dt^2 = kc(x(i+1) + x(i-1) - 2Xi) + kp(v0 * t - xi) + Ff
     
 3. The specific scenario I will simulate is a spring system with 25 blocks connected by springs a bottom plate, and a top plate connected to the blocks by leaf springs. I will probably start with the parameters that are given in the text, and then try the calculation again with an increased N value, and different initial conditions. 
 
 4. I intend to use the Euler method on each block to determine its motion over time. I will also need to vary the time steps in order to get accurate and relatively speedy results. 
 
 5. Boundary conditions: 
-* The first block will start and x = 0, and $x_i$ will be greater than $x_{i - 1}$.
+* The first block will start and x = 0, and xi will be greater than x(i-1).
 * The masses, spring constants, magnitudes of forces, and velocity of the top plate moving toward the right will all be nonnegative.
 * Friction force should match the other forces until they exceed $F_0$ so that the blocks stay static.
 
