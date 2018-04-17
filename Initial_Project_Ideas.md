@@ -60,7 +60,7 @@ Another idea is to model the waves on a string of a musical instrument, and cons
 2. Controlling equations:
 * Force equations:
     * Force on block from neighboring blocks: Fb = -kc(xi - x(i+1)) - kc(xi - x(i-1))
-    * Force of a leaf spring on block: Fl = -kp(xi - v0 t)
+    * Force of a leaf spring on block: Fl = -kp(xi - v0 * t)
     * Friction force due to bottom plate: Ff = -(F0 * sin(v_i))/(1 + |vi / vf|)
 * Overall equation of motion: mi * d^2xi/dt^2 = kc(x(i+1) + x(i-1) - 2Xi) + kp(v0 * t - xi) + Ff
     * If we break this up, we have: dxi/dt = vi and mi * d^2xi/dt^2 = kc(x(i+1) + x(i-1) - 2Xi) + kp(v0 * t - xi) + Ff
@@ -72,7 +72,7 @@ Another idea is to model the waves on a string of a musical instrument, and cons
 5. Boundary conditions: 
 * The first block will start and x = 0, and xi will be greater than x(i-1).
 * The masses, spring constants, magnitudes of forces, and velocity of the top plate moving toward the right will all be nonnegative.
-* Friction force should match the other forces until they exceed $F_0$ so that the blocks stay static.
+* Friction force should match the other forces until they exceed F0 so that the blocks stay static.
 
 6. The main result I will obtain is a plot of the motion of each individual block over time. They should move suddenly for a short period of time, and generally at the same time as each other. I should also be able to calculate a value of b from the Gutenberg-Richter law, and I will verify this by comparing it to the real life range of b values.
 
